@@ -9,8 +9,6 @@ public class TesteFuncionario {
 		daniel.setSalario(2500.00);
 		
 		System.out.println(daniel.getNome());
-		System.out.println(daniel.getCpf());
-		System.out.println(daniel.getSalario());
 		System.out.println(daniel.getBonificacao());
 	}
 

@@ -1,4 +1,3 @@
-
 import java.util.Set;
 
 public class TesteGerente {
@@ -16,9 +15,10 @@ public class TesteGerente {
 		System.out.println(gerente.getSalario());
 		
 		gerente.setSenha(3333);
-		
 		boolean autenticou = gerente.autentica(3333);
+		
 		System.out.println(autenticou);
+		System.out.println(gerente.getBonificacao());
 		
 	}
 
