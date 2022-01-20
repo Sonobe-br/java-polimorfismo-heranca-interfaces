@@ -10,14 +10,18 @@ public class TesteReferencias {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setSalario(2000.0);
 		
-		AberturaDeContas contas = new AberturaDeContas();
+		AtendentePF contas = new AtendentePF();
 		contas.setSalario(2500.0);
+
+		Designer designer = new Designer();
+		designer.setSalario(2800.0);
 		
 				
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(gerente);
 		controle.registra(funcionario);
 		controle.registra(contas);
+		controle.registra(designer);
 		
 		System.out.println(controle.getPremio());
 		
