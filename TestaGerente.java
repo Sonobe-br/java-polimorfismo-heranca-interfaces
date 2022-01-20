@@ -1,15 +1,13 @@
-import java.util.Set;
 
 public class TesteGerente {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 		Gerente gerente = new Gerente();
-		
 		gerente.setNome("Daniel");
 		gerente.setCpf("222.222.222-22");
-		gerente.setSalario(6050.00);
-		
+		gerente.setSalario(6000.00);
+				
 		System.out.println(gerente.getNome());
 		System.out.println(gerente.getCpf());
 		System.out.println(gerente.getSalario());
@@ -19,7 +17,6 @@ public class TesteGerente {
 		
 		System.out.println(autenticou);
 		System.out.println(gerente.getBonificacao());
-		
 	}
-
+	
 }
