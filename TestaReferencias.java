@@ -6,10 +6,7 @@ public class TesteReferencias {
 		Gerente gerente = new Gerente();
 		gerente.setNome("Daniel");
 		gerente.setSalario(6000.0);
-		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setSalario(2000.0);
-		
+			
 		AtendentePF contas = new AtendentePF();
 		contas.setSalario(2500.0);
 
@@ -19,7 +16,7 @@ public class TesteReferencias {
 				
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(gerente);
-		controle.registra(funcionario);
+		
 		controle.registra(contas);
 		controle.registra(designer);
 		
