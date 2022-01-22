@@ -7,4 +7,12 @@ public class ContaPoupanca extends Conta {
 		
 	}
 
+	@Override
+	public void depositar(double valor) {
+		
+		super.saldo += valor;
+		
+	}
+
 }
+
