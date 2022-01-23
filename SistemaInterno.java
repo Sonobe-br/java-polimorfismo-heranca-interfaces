@@ -3,7 +3,7 @@ public class SistemaInterno {
 
 	private int senha = 3333;
 
-	public void autentica(FuncionarioAutenticavel funcionario_autenticavel) {
+	public void autentica(Autenticavel funcionario_autenticavel) {
 			
 		boolean autenticou = funcionario_autenticavel.autentica(this.senha);
 		

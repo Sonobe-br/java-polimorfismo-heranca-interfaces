@@ -6,12 +6,15 @@ public class TesteSistemaInterno {
 		Gerente gerente = new Gerente();
 		gerente.setSenha(3333);
 		
-		Administrador adm = new Administrador();
-		adm.setSenha(2222);
+		Administrador admnistrator = new Administrador();
+		admnistrator.setSenha(2222);
+
+        Cliente client = new Cliente();
+        client.setSenha(3333); 
 						
 		SistemaInterno sysInter = new SistemaInterno();
 		sysInter.autentica(gerente);
-		sysInter.autentica(adm);
+		sysInter.autentica(admnistrator);
 		
 	}
 
