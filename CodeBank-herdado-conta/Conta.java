@@ -1,10 +1,10 @@
 
-public class Conta {
+public abstract class Conta {
 	
 	protected double saldo;
 	private int agencia;
 	private int numero;
-	private Cliente titular;
+	private String titular;
 	private static int total;
 	
 	// Constructor >>
@@ -97,12 +97,12 @@ public class Conta {
 	
 	}
 		
-	public void setTitular(Cliente titular) {
+	public void setTitular(String titular) {
 		
 		this.titular =  titular; 
 	}
 	
-	public Cliente getTitular() {
+	public String getTitular() {
 	
 		return titular;
 	
