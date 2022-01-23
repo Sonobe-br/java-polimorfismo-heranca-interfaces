@@ -1,36 +1,30 @@
 
 public class Administrador extends Funcionario implements Autenticavel {
 	
-	private int senha;
+	private CacheUtil autenticador;
 		
-	@Override
-	public double getBonificacao() {
+	public Administrador() {
 	
-		return 50;
+		this.autenticador = new CacheUtil();
 		
 	}
 
 	@Override
+	public double getBonificacao() {
+		return 50;
+	}
+	
+	@Override
 	public void setSenha(int senha) {
-
-		this.senha = senha; 
+		this.autenticador.setSenha(senha); 
 		
 	}
 
 	@Override
 	public boolean autentica(int senha) {
+		 boolean autentica = this.autenticador.autentica(senha);
+		 return autentica;
 		
-		if(this.senha == senha) {
-			
-			return true;
-
-		} else {
-			
-			return false;
-			
-		}
-				
 	}
 	
 }
-
